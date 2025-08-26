@@ -190,7 +190,7 @@ for i in groups:
     )
 
 # Theme Dracula
-color = colors.Gruvbox
+color = colors.GruvboxMaterial
 
 layout_theme = {
     "border_width": 3,
@@ -215,8 +215,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Maple Mono NL",
-    fontsize=20,
+    font="Terminess Nerd Font Mono Bold",
+    fontsize=23,
     padding=0,
     background=color["dark"],
 )
@@ -225,14 +225,14 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         wallpaper=os.path.join(
-            os.path.expanduser("~"), ".config/qtile/wallpapers/astro.jpg"
+            os.path.expanduser("~"), ".config/qtile/wallpapers/green.png"
         ),
         wallpaper_mode="fill",
         top=bar.Bar(
             [
                 # GroupBox widget with custom colors
                 widget.GroupBox(
-                    fontsize=24,
+                    fontsize=30,
                     margin_y=2,
                     margin_x=2,
                     padding=5,
